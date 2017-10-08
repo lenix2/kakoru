@@ -1,0 +1,37 @@
+{
+  "name": "lmdb",
+  "version": "0.0.0",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~3",
+    "underscore": "~1",
+    "bootstrap": "~3",
+    "angular": "~1",
+    "angular-route": "~1",
+    "angular-animate": "~1",
+    "angular-resource": "~1",
+    "angular-mocks": "~1",
+    "angular-sanitize": "~1",
+    "angular-bootstrap": "~2",
+    "angular-messages": "~1",
+    "angular-aria": "~1",
+    "angular-ui-utils": "~0.1",
+    "moment": "~2",
+    "font-awesome": "~4",
+    "dexie": "~1",
+    "angular-ui-notification": "~0",
+    "angular-material": "~1",
+    "roboto-fontface": "~0",
+    "angular-ui-router": "~1",
+    "angular-ui-tree": "^2.22.6"
+  },
+  "resolutions": {
+    "angular": "1.5.9",
+    "angular-sanitize": "1.5.9"
+  }
+}

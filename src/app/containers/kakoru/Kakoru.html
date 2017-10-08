@@ -1,0 +1,41 @@
+<md-card>
+  <div layout="column" layout-align="center center">
+    <h1>Game</h1>
+  </div>
+
+  <div class="game-wrapper" style="position: relative; width: fit-content; height: fit-content;">
+    <div class="game">
+      <div ng-repeat="col in $ctrl.game.rows"  layout="row" layout-align="start start" class="game-row">
+        <div ng-repeat="cell in col.cells" class="game-cell" ng-click="">
+          <div class="cel-click" ng-click="$ctrl.changeGameCell(cell, $event)">
+          </div>
+          <div ng-if="cell.tr > 0 || cell.bl > 0">
+            <input class="col-rule col-tr" ng-model="cell.tr" type="number" maxlength="2">
+            <div class="col-div"></div>
+            <input class="col-rule col-bl" ng-model="cell.bl" type="number" maxlength="2">
+          </div>
+          <div ng-if="cell.tr < 0 || cell.bl < 0">
+            <div class="col-block"></div>
+          </div>
+        </div>
+      </div>
+
+      <md-button class="md-fab game-edit game-edit-add-right" aria-label="Add right" ng-click="$ctrl.addRight()">
+        <md-icon >border_left</md-icon>
+      </md-button>
+      <md-button class="md-fab game-edit game-edit-remove-right" aria-label="Remove right" ng-click="$ctrl.removeRight()">
+        <md-icon >border_right</md-icon>
+      </md-button>
+      <md-button class="md-fab game-edit game-edit-add-bottom" aria-label="Add bottom" ng-click="$ctrl.addBottom()">
+        <md-icon >border_top</md-icon>
+      </md-button>
+      <md-button class="md-fab game-edit game-edit-remove-bottom" aria-label="Remove bottom" ng-click="$ctrl.removeBottom()">
+        <md-icon >border_bottom</md-icon>
+      </md-button>
+    </div>
+  </div>
+  <div class="game-control" style="height: 100px;">
+
+  </div>
+</md-card>
+

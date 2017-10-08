@@ -1,0 +1,14 @@
+node_modules/
+
+bower_components/
+
+.idea/
+
+.tmp/
+
+out/
+
+dist/
+
+war/
+
