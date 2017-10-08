@@ -8,8 +8,8 @@ function towar() {
   return gulp.src(["dist/**/*.*"])
     .pipe(war({
       welcome    : 'index.html',
-      displayName: 'timesheets'
+      displayName: 'app'
     }))
-    .pipe(zip('timesheets.war'))
+    .pipe(zip('app.war'))
     .pipe(gulp.dest("./war"));
 };
